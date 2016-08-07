@@ -1,0 +1,13 @@
+= Todo list =
+
+== NLP ==
+
+=== Classification ===
+
+1. 优化印地语全网分类
+2. 根据评测结果优化英语全网分类
+
+
+=== Auto tagging ===
+
+1. 自动生成tag
