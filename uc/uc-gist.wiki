@@ -1,0 +1,189 @@
+= waup 国际浏览器推送平台 =
+
+== MySQL ==
+
+=== UPMC ===
+
+dev:
+`mysql -h 10.20.37.76 -P 3306 -uupmc_int -pupmc_int UPMC_INT`
+
+prod (Login on kpi216):
+`mysql -u upmc_int -h 127.0.0.1 -pZ9JSKDgE6lcwmi4hdbX5 -P23307 -v UPMC_INT`
+
+
+=== PushSite ===
+
+dev (nemo@mob3032)
+`mysql -uroot -pbigdata2014 waup_dev`
+
+prod (bigdata@mob3032)
+`mysql -uroot -pbigdata2014 waup_2`
+
+
+== Application ==
+ 
+=== PushSite ===
+
+dev:
+http://mob3032:8021/home#/group/mygroup
+
+运营访问（无mob3032权限）：
+http://100.84.44.233:8899/home#/pushmanager/pushtasklist
+
+
+## Log
+
+kpi216
+/home/uaewa/uae_agent/apps/upmcintdispatchserver/logs
+
+/home/bigdata/env/config/supervisord/
+
+
+----
+
+= Data Flow =
+
+开发环境：slave1，主要用来写代码
+
+生产网段：
+1. 开发机：usa-mob655，可以用来测试脚本流程，部署开发流程，写个人目录/user/datamining/{your_dir}
+2. 生产机：usa-mob656，部署生产流程，写生产目录/user/datamining/product/
+
+代码中转使用FTP
+
+
+= FTP =
+
+ftp://stftp1.uctest.local:9121
+
+从生产网访问ftp: ftp://10.20.38.32:9121
+
+目录： /bigdata
+
+参考文档： http://ok.ucweb.local/pages/viewpage.action?pageId=14223847
+
+常用命令：
+
+{{{class="brush: bash" 
+wget ftp://<user>:<pwd>@stftp1.uctest.local:9121/<file_relative_path>/<file>
+wput <your_file> ftp://<user>:<pwd>@stftp1.uctest.local:9121/<file_relative_path>
+
+wget ftp://zzl106105:OPYKHe3S9yJ7@stftp1.uctest.local:9121/zhuzelong/<file>
+wput <file> ftp://zzl106105:OPYKHe3S9yJ7@10.20.38.32:9121/zhuzelong/
+
+}}}
+
+
+----
+= Git Submodule =
+
+Submodule `proto`的信息已经写入到`iflow-online`项目
+
+{{{class="brush:bash"
+cd iflow-online
+git pull
+git submodule init
+git submodule update
+
+
+# Push submodule
+git submodule foreach git push <repo> <branch>
+
+# Pull submodule
+git submodule foreach git pull <repo> <branch>
+
+# Add submodule to repo
+git submodule add <git@.git>
+git add .gitmodules -f
+git commit -a -m <message>
+git push
+}}}
+
+
+
+----
+= LA iflow 国际头条推送平台 =
+
+== 测试环境 MySQL ==
+(On mob655)
+mysql -uiflow -pbigdata2016
+
+mysql -h 10.24.138.231 -u push -pW9b6rk78bL
+
+
+== 生产环境 MySQL ==
+
+db: upmc_int
+user: upmc_int
+pwd: 0238CCsdzEMVLyD7mK4p
+mysql -u upmc_int -h 127.0.0.1 -p0238CCsdzEMVLyD7mK4p -P23301 -v upmc_int
+
+
+db: gcm
+user : gcm
+password : 9ilNlDFJMb9hNmZUW7LN
+mysql -u gcm -h 127.0.0.1 -p9ilNlDFJMb9hNmZUW7LN -P23301 -v gcm
+
+
+----
+= LA 画像查询系统 =
+
+== Dev MySQL ==
+datamining@usa-mob655
+mysql -uiflow -pbigdata2016 user_query_dev
+
+== Test MySQL ==
+datamining@usa-mob655
+mysql -uiflow -pbigdata2016 user_query_test
+
+== Prod MySQL ==
+readonly@la-iflow-push01
+mysql -h 127.0.0.1 -P 23301 -uiflow_user_query -p3KbSnT3cGC5kz1mj3dc0 iflow_user_query
+
+
+
+----
+= ieasy 分类badcase修复网站 =
+
+## slave1
+user: django
+pwd: 123456
+
+## Admin
+user: root
+pwd: iflow#easy
+
+## MySQL@slave1
+user: ieasy
+pwd: iflow#easy
+
+mysql -uieasy -piflow#easy -h 100.84.72.178 -P 3306 ieasy
+
+
+----
+LA-iflow-push public IP addresses
+
+iflow-push01: 70.39.185.84
+iflow-push02: 70.39.185.40
+iflow-push03: 70.39.185.36
+iflow-push04: 70.39.185.252
+iflow-push05: 70.39.185.248
+iflow-push06: 70.39.185.244
+
+
+
+
+----
+# 俄罗斯视频内容库
+@hk-aliyun-data09
+mysql -uroot -pbigdata2014 sv_gj_navi_video
+
+
+----
+# Shenma
+
+```bash
+@ 10.99.48.36
+scp /home/admin/zhuzelong/i18n_hindi_classify/host_transfer/build/release64/packages/porn_host_detect_release64.tar.gz zzl106105@10.181.207.7:/home/zzl106105/hindi_classify/
+
+```
