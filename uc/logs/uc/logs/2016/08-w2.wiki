@@ -1,0 +1,13 @@
+== 2016-08-08 ==
+
+1. [X] 定位domain classifier不输出的原因 
+2. [X] 准备印地语语料：ref. `iflow@usa-mob656: /home/iflow/product/offline-etl/usa2indi.sh` 
+
+== 2016-08-09 ==
+
+== 2016-08-10 ==
+
+== 2016-08-11 ==
+
+== 2016-08-12 ==
+
