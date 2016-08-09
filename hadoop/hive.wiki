@@ -1,0 +1,9 @@
+:hive:
+
+= Hive =
+
+
+
+== Hive optimization ==
+
+- [[hive/hive-opt|Hive optimization]] 

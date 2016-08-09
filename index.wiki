@@ -25,7 +25,9 @@
 
 === Hadoop, Hbase and Hive ===
 
-- [[hadoop/hadoop|Hadoop, hbase and hive]] 
+- [[hadoop/hadoop|Hadoop and HDFS]] 
+- [[hadoop/hbase|Hbase]] 
+- [[hadoop/hive|Hive]] 
 
 === Spark ===
 
