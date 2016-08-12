@@ -139,3 +139,6 @@ let b:fswitchdst = 'cc,cpp,cxx,c'
 
 " ----- tagbar settings -----
 nmap <Leader>bb :TagbarToggle<CR>
+
+" ----- Python json shortcut -----
+nmap <Leader>jj :%!python -m json.tool<CR>
