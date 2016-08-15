@@ -3,7 +3,11 @@
 = Hive =
 
 
+== Hive tips ==
+- [[hive/hive-tips|Hive tips]] 
+
 
 == Hive optimization ==
 
 - [[hive/hive-opt|Hive optimization]] 
+
