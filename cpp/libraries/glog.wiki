@@ -1,4 +1,0 @@
-= GLOG =
-
-
-== Control logging levels ==

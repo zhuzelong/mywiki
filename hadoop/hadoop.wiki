@@ -1,3 +1,0 @@
-= Index of Hadoop articles =
-
-1. [[hadoop/yarn-architecture|Yarn architecture]] 

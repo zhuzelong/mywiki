@@ -124,7 +124,7 @@ let g:ctrlp_extensions = ['buffertag']
 " ----- CtrlP settings end -----
 
 " ----- vimwiki settings begin -----
-let g:vimwiki_list = [{'path': '~/Documents/mywiki'}]
+let g:vimwiki_list = [{'path': '~/Documents/mywiki', 'syntax': 'markdown', 'ext': '.md'}]
 
 " ----- vimwiki settings end  -----
 

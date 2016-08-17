@@ -1,10 +1,10 @@
 :hive:
 
-= Hive optimization =
+# Hive optimization
 
-== Join optimization ==
+## Join optimization
 
-=== Common join and Map join ===
+### Common join and Map join 
 
 Detail in https://cwiki.apache.org/confluence/display/Hive/MapJoinOptimization and https://cwiki.apache.org/confluence/display/Hive/LanguageManual+JoinOptimization
 
@@ -29,3 +29,4 @@ Related options
 
     List the smaller table at the beginning in the join clause.
     
+

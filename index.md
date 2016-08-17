@@ -1,55 +1,55 @@
 :wiki-index:
 
-= My Wiki Index = 
+# My Wiki Index
 
-== Python lang == 
+# Python lang 
 
 - [[python/py-lang|Python language features]] 
 - [[python/py-third-libray|Python third libraries]] 
 
 
-== Java lang ==
+# Java lang
 
 - [[java/java-lang|Java language features]] 
 - [[java/java-third-libray|Java third libraries]] 
 - [[java/scala/scala-lang|Scala language basis]] 
 
 
-== C++ lang ==
+# C++ lang
 
 - [[cpp/cpp-lang|C++ language basis]] 
 - [[cpp/cpp-libray|C++ libraies]] 
 
 
-== Hadoop ==
+# Hadoop
 
-=== Hadoop, Hbase and Hive ===
 
 - [[hadoop/hadoop|Hadoop and HDFS]] 
 - [[hadoop/hbase|Hbase]] 
 - [[hadoop/hive|Hive]] 
 
-=== Spark ===
+## Spark
 
 - [[hadoop/spark|Spark]] 
 
 
-== General machine learning algorithms ==
+# General machine learning algorithms
 
 This wiki describes general machine learning algorithms, which would be used in miscellaneous fields, e.g. NLP, CTR
 
 - [[machine-learning/algo|Machine learning algorithms]] 
 
 
-== Natural languae processing ==
+# Natural languae processing
 
 - [[nlp/algo|NLP algorithms]] 
 - [[nlp/tool|NLP tools]] 
 
 
-== UC work ==
+# UC work 
 
-- [[uc/logs/work-log|UC work log]] 
+- [[uc/work-log|UC work log]] 
 - [[uc/uc-todo|UC todo list]] 
+
 
 
