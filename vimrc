@@ -87,6 +87,12 @@ set shiftwidth=4
 " 让 vim 把连续数量的空格视为一个制表符
 set softtabstop=4
 
+" C++文件的缩进设为2
+autocmd FileType c,cpp setlocal tabstop=2 shiftwidth=2 softtabstop=2
+" C++文件匹配尖括号
+autocmd FileType c,cpp setlocal matchpairs+=<:>
+
+
 " 基于缩进或语法进行代码折叠
 "set foldmethod=indent
 set foldmethod=syntax
@@ -95,6 +101,10 @@ set nofoldenable
 
 " *.cpp 和 *.h 间切换
 nmap <silent> <Leader>ch :FSRight<cr>
+
+" 使用Ctrl + l/h 切换tab
+nmap <C-l> gt
+nmap <C-h> gT
 
 " 使用 NERDTree 插件查看工程文件。设置快捷键，速记：file list
 nmap <Leader>kb :NERDTreeToggle<CR>
