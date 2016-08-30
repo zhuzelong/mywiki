@@ -17,7 +17,7 @@ Alternatively, if the total size of the table is known in advance, doing some fi
 
 ```sql
 select * from mytbl
-where rand() <# 0.001
+where rand() <= 0.001
 distribute by rand()
 sort by rand()
 limit 100;
