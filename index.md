@@ -50,6 +50,7 @@ This wiki describes general machine learning algorithms, which would be used in 
 
 - [[uc/work-log|UC work log]] 
 - [[uc/uc-todo|UC todo list]] 
+- [[uc/list|UC machines]]
 
 
 
