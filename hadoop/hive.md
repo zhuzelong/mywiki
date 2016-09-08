@@ -4,7 +4,7 @@
 
 
 ## Hive tips
-- [[hive-tips|Hive tips]] 
+- [[hive-tips|Hive cookbook]] 
 
 
 ## Hive optimization

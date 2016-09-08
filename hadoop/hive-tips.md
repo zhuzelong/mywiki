@@ -1,4 +1,4 @@
-# Hive Tips
+# Hive Cookbook
 
 
 ## Random sampling 
