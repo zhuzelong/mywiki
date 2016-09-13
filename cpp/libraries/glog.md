@@ -17,3 +17,16 @@ GLOG_minloglevel=2 ./runner
 (gdb)> set env GLOG_minloglevel = 2
 
 ```
+
+
+## Set G_flag
+
+The Glog settings can be set via environment variales by `GLOG_$flag`. The common flags are:
+
+- `logtostderr` (bool, default false)
+- `colorlogtostderr` (bool, default false)
+- `stderrthreshold` (int, default 2): output the log of which level is larger than the threshold to stderr
+- `minloglevel` (int, default 0, i.e. INFO)
+- `log_dir` (string, default "")
+- `v` (int, default 0): control vlog
+- `vmodule` (string, default "")
