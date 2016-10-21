@@ -5,13 +5,13 @@
 # Python lang 
 
 - [[python/py-lang|Python language features]] 
-- [[python/py-third-libray|Python third libraries]] 
+- [[python/py-third-libray|Python libraries]] 
 
 
 # Java lang
 
 - [[java/java-lang|Java language features]] 
-- [[java/java-third-libray|Java third libraries]] 
+- [[java/java-third-libray|Java libraries]] 
 - [[java/scala/scala-lang|Scala language basis]] 
 
 
