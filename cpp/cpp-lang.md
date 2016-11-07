@@ -8,5 +8,5 @@
 - [[clang/generic-function|Generic function]]
 - [[clang/pointer|Pointer and Array]]
 - [[clang/io|File IO]]
-- [[clang/memory-management|Memory management]]
+- [[clang/memory-management|Function and Memory management]]
 - [[clang/include|Include directive]]
