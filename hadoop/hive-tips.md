@@ -22,3 +22,12 @@ distribute by rand()
 sort by rand()
 limit 100;
 ```
+
+
+## Rebuild table partitions
+
+If the partition files exist in HDFS, then execute the following command in Hive Command Line to rebuild all partitions at once:
+
+```sql
+MSCK REPAIR TABLE <tbl>;
+```

@@ -29,4 +29,22 @@ Related options
 
     List the smaller table at the beginning in the join clause.
     
+    
+    
+## Transform optimization
+
+
+### Determine the split size
+
+`actual_split_size = max (mapred.min.split.size, min (mapred.max.split.size, dfs.block.size))`
+
+Hive不知道`dfs.block.size`的信息；可以通过`set mapred.[min|max].split.size;` 查询当前的设置。
+
+
+### Avoid deadlock
+
+Refer the [blog](http://www.cnblogs.com/yueweimian/p/4667888.html)
+
+`set mapreduce.job.reduce.slowstart.completedmaps = 0.95`
+
 

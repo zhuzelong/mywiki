@@ -10,6 +10,12 @@ T func(vector<T> v) {
 
 }
 
+
+template <typename T1, typename T2>
+func(T element) {
+
+}
+
 ```
 
 The type `T` is determinded during compilation.
