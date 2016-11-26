@@ -2,6 +2,11 @@
 
 # My Wiki Index
 
+# Git
+
+[[git/git|Git tutorial]]
+
+
 # Python lang 
 
 - [[python/py-lang|Python language features]] 
