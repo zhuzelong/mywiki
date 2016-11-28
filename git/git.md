@@ -18,7 +18,7 @@ Status code:
 
 ## Diff
 
-Use `git diff` to compare files in *working directory* and *staged*, i.e. modified & unstaged.
+Use `git diff` to compare files in *working directory* with *staged*, i.e. modified & unstaged.
 
 Use `git diff --staged`` to check staged content, i.e. content which is ready to commit
 
