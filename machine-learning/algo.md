@@ -1,0 +1,3 @@
+:algorithm:
+
+[[sampling|Sampling]]
