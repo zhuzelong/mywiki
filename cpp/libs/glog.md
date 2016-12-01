@@ -1,3 +1,5 @@
+:cpp:
+
 # GLOG
 
 Refer to the [tutorial](http://rpg.ifi.uzh.ch/docs/glog.html)
@@ -30,3 +32,4 @@ The Glog settings can be set via environment variales by `GLOG_$flag`. The commo
 - `log_dir` (string, default "")
 - `v` (int, default 0): control vlog
 - `vmodule` (string, default "")
+
