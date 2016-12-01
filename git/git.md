@@ -257,3 +257,73 @@ git rebase --onto master server client
 ```
 
 
+----
+# Submodule
+
+## Add submodule
+
+`git submodule add <url>` to add a sub-repository.
+
+The metainfo of submodules is stored in `.gitmodules`.
+
+A submodule is a directory in the working directory, but Git does not track the directory when out of the directory.
+
+
+## Clone submodule
+
+1. `git clone <url>` to clone the repository, the submodule directories are **empty**.
+2. `git submodule init` to initialize configurations.
+3. `git submodule update` to fetch **all* data from the repository and then checkout the specified commit.
+
+`git clone --recursive <url>` is a shortcut.
+
+
+## Working in submodule
+
+cd to the submodule directory.
+
+
+### Fetch update
+
+Edit `.gitmodules` or the local `.git/config` to change the tracked branch of submodule.
+
+`git config -f .gitmodules submodule.<submodule>.branch <branch_to_track>`
+
+`git config status.submodulesummary 1` to show the detail of modification of submodules.
+
+`git fecth; git merge <alias>/<branch>` in the submodule or `git submodule update --remote [<submodule>]` in the main module (branch `master` by default), the submodules is updated but not committed to the main module.
+
+
+**Caveat**: the submodule will be **detached** after `git submodule update --remote`, i.e. not local tracked. The status is updated to the remote one. Specify the expected action as following:
+
+- `git submodule update --remote --merge`: fetch remote change and merge into local
+- `git submodule update --remote --rebase`
+
+
+### Push update
+
+`git push --recurse-submodules=check` to check whether all submodules have been pushed before pushing the main module. 
+
+`git push --recurse-submodules=on-demand` to automatically push all submodules before pushing the main module.
+
+
+### Submodule shortcuts
+
+`git submodule foreach '<git command>'`
+
+
+## Issues
+
+### Submodule will exists in any branches
+
+```bash
+git checkout -b new_feature
+
+git submodule add <url>
+
+git commit -am 'Add submodule'
+
+git checkout master  # Warn, the submodule will still exists and UNTRACKED
+```
+
+Just remove (`git rm -r <submodule>`) the submodule and `git submodule update --init` when checking out the branch `new_feature`.

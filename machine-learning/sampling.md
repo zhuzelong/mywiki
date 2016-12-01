@@ -23,3 +23,11 @@ Most of the distribution sampling is based on uniform distribution.
 ## Gibbs sampling
 
 MCMC在高维（二元、多元）空间的应用，本质上是依次在各个维度（轴）上使用一元MCMC。
+
+
+
+# Distribution
+
+Baysian estimation: `prior + knowledge (data) = posterior`
+
+Distribution conjugate (分布共轭）: A-B conjugate, if the data follows B distribution, then both prior and posterior follow A distribution.
