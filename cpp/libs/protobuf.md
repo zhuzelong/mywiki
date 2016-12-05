@@ -82,6 +82,11 @@ inline const google::protobuf::RepeatedPtrField<tutorial::Person_PhoneNumber>& p
 
 inline const tutorial::Person::PhoneNumber& phone(int index)[ ]( )const;
 
+// Iterate repeated fields
+for (int i = 0; i < phone_size(); i++) {
+    const tutorial::Person::PhoneNumber& phone_number = phone(i);
+}
+
 // For enum
 Person::PhoneNumber {
     Person::MOBILE,
