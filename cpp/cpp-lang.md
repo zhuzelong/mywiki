@@ -11,4 +11,5 @@
 - [[clang/io|File IO]]
 - [[clang/memory-management|Function and Memory management]]
 - [[clang/include|Include directive]]
-- [[clang/class|Class]]
+- [[clang/class|Class (object-based)]]
+- [[clang/object-oriented|Object oriented]]
