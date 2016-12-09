@@ -1,4 +1,6 @@
-# Generic function
+:cpp:
+
+# Template function
 
 
 ## Definition
@@ -19,3 +21,8 @@ func(T element) {
 ```
 
 The type `T` is determinded during compilation.
+
+
+
+----
+# Template class

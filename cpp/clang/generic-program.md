@@ -43,10 +43,15 @@ for (iter = container.begin(); iter != container.end(); ++iter) {
     cout << *iter << std::endl;
 }
 
+// 倒序访问
+for (vector<T>::reverse_iterator it = vec.rbegin(); it != vec.rend(); ++it) {
+    cout << *it << std::endl;
+}
 ```
 
-- `begin()`返回容器第一个元素的指针  
+- `begin()`返回容器第一个元素的指针, `rbegin()`返回倒序的第一个元素 
 - `end()`返回容器最后一个元素的**下一个**位置的指针，只能用于比较位置，不能使用内容
+- 顺序访问使用`iterator`或`const_iterator`，倒序访问必须用`reverse_iterator`
 
 
 ----

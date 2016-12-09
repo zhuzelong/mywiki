@@ -2,7 +2,6 @@
 
 # Class
 
-
 ## Components
 
 1. declaration
