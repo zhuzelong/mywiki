@@ -26,3 +26,27 @@ The type `T` is determinded during compilation.
 
 ----
 # Template class
+
+## Definition
+
+```cpp
+template <typename T>
+class MyClass {
+public:
+    void func(T object);
+
+private:
+    T val_;
+
+```
+
+
+## Where to initialize a class
+
+Refer to "Essential C++" P174
+
+init list vs init in constructor:  
+- init list: copy constructor
+- init in constructor: default constructor + copy assignment
+
+Always prefer init list.
