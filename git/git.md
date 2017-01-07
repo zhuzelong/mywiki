@@ -204,6 +204,8 @@ A **branch** is a **pointer** pointing at a certain commit object, the `HEAD` is
 
 `git branch [-d|-D] <branch>`, `-D` is force deletion.
 
+`git push <alias> --delete <branch>` to delete remote branch.
+
 
 ### Merge
 
